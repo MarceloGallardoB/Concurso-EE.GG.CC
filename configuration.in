@@ -1,0 +1,18 @@
+% Parametres physiques :
+tfin    = 8971.402931	% temps total de simualation (s) 17.94280586186548 (d a)   //  8971.402931 (d b) = is 2pi/Omega  // 149.428
+mass    = 1.5e-1   	% masse en (kg)
+q       = 1.e-4   	% charge en (C)
+L       = 0.2    	% longueur du pendule (m)
+g       = 9.81   	% acceleration de gravite (m/s^2)
+k       = 0.e0   	% constante de la force du frottement (kg/m) 7.5e-2
+E0      = 3.e3	% intensite du champ electrique (V/m)
+omega   =  7.0035705178 	% vitesse angulaire champ electrique (r/s) 7.0035705178  = omega0  
+phi     = 0.e0     	% phase champ electrique
+theta0  = 1.96   % angle initiale (r) pi - epsilon = 3.1415926 
+thetaDot0 = 1 % vitesse angulaire initiale (r/s) 1.e-2
+
+% Parametres numeriques :
+schema   	 = SV     % type de schema: Euler,StormerVerlet  
+nsteps 	 = 1000000	  % pas de temps %%1000000
+output   = SV.out % nom du fichier d'output 
+sampling = 100 % output tous les sampling pas de temps (100 para 10000) & 2 
